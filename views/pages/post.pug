@@ -1,0 +1,13 @@
+extends ../layout/page
+
+block content
+  .main.col-lg-4
+    .row
+      if (success)
+        span #{success}
+      if (error)
+        span #{error}
+
+  //- Post
+  .container
+    #post #{post}

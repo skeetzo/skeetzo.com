@@ -1,0 +1,74 @@
+extends ../layout/page
+
+block content
+  .main.col-lg-4
+    .row
+      if (success)
+        span #{success}
+      if (error)
+        span #{error}
+
+  //- //- Links
+  //- .container
+  //-   //- hr
+  //-   h3 Pron Star
+  //-   .row
+  //-     p Book me: 
+  //-       a(href="mailto:JustAlexxxD@gmail.com") JustAlexxxD@gmail.com
+  //-     each link in links
+  //-       include ../include/link
+
+  //- if (blog)
+  //-   //- Blog
+  //-   .container
+  //-     hr
+  //-     h3 Blog
+  //-     .row
+  //-       p I wrote stuff: 
+  //-         a(href=domain+"/links") #{domain}/links
+  //-       each post in blog
+  //-         include ../include/post
+
+  //- //- Projects
+  //- .container
+  //-   hr
+  //-   h3 Projects
+  //-   .row
+  //-     p Talk shop: 
+  //-       a(href="mailto:WebmasterSkeetzo@gmail.com") WebmasterSkeetzo@gmail.com
+  //-     - var l = 12;
+  //-     - if (projects.length > 1) l = 4;
+  //-     each project in projects
+  //-       include ../include/project
+
+  //- //- Dork
+  //- .container
+  //-   hr
+  //-   h3 Dork
+  //-   .row
+  //-     p Watch me play DotA:
+  //-     a(href="https://www.twitch.tv/cockthulhu", target="_blank")
+  //-       img(src="images/cockthulhu.jpeg", width=75, height=75)
+  //-     p
+  //-       a(href="https://www.twitch.tv/cockthulhu", target="_blank") twitch.tv/cockthulhu
+  //-     //- a(href="https://www.youtube.com/", target="_blank")
+  //-     //-   img(src="images/youtube.jpeg", width=75, height=75)
+  //-     //- p
+  //-     //-   a(href="https://www.youtube.com/", target="_blank") youtube.com/
+
+  //- //- $$$
+  //- if (cashapp||paypal||btc)
+  //-   .container
+  //-     hr
+  //-     h3 $$$
+  //-     .row
+  //-       p or send me money just cuz
+  //-       if (cashapp)
+  //-         p
+  //-           a(href="https://cash.app/$"+cashapp) cash.app/$#{cashapp}
+  //-       if (paypal)
+  //-         p
+  //-           a(href="https://www.paypal.me/"+paypal) paypal.me/#{paypal}
+  //-       if (btc)
+  //-         p
+  //-           a(href="bitcoin:"+btc+"?message=Dick%20Donation") Bitcoin

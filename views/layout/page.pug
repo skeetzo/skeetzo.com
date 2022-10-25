@@ -1,0 +1,24 @@
+//- Page
+doctype html
+html(lang='en')
+  head
+    block head
+      include ../include/head
+  body
+    .content
+      h1 #{title}
+        //- a(href="/") #{title}
+      if (success||error)
+        .main.col-lg-4
+          .row
+            if (success)
+              span #{success}
+            if (error)
+              span #{error}
+      block content
+      P
+    footer
+      block footer
+        include ../include/footer
+    block javascript
+      include ../include/js

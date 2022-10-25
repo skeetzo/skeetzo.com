@@ -1,0 +1,63 @@
+extends ../layout/page
+
+block content
+
+  //- Links
+  .container
+    //- hr
+    h3 Pron Star
+    .row
+      p Book me: 
+        a(href="mailto:JustAlexxxD@gmail.com") JustAlexxxD@gmail.com
+      each link in links
+        include ../include/link
+
+  //- Projects
+  .container
+    hr
+    h3 Projects
+    .row
+      p Hire me to code for you: 
+        a(href="mailto:WebmasterSkeetzo@gmail.com") WebmasterSkeetzo@gmail.com
+      p Or check out my work: 
+        a(href='//github.com/skeetzo',target="_blank") github.com/skeetzo
+      - var l = 12;
+      - if (projects.length > 1) l = 4;
+      each project in projects
+        include ../include/project
+
+  if (blog)
+    //- Blog
+    .container
+      hr
+      h3 Blog
+      .row
+        p I wrote stuff: 
+          a(href=domain+"/links") #{domain}/links
+        each post in blog
+          include ../include/post-card
+
+  //- Dork
+  .container
+    hr(style="width:75%")
+    h3 Dork
+    .row
+      p Watch me play DotA:
+      a(href="//www.twitch.tv/cockthulhu", target="_blank")
+        img(src="/images/cockthulhu.jpeg", width=75, height=75)
+      p
+        a(href="//www.twitch.tv/cockthulhu", target="_blank") twitch.tv/cockthulhu 
+      //- a(href="//www.youtube.com/", target="_blank")
+      //-   img(src="/images/youtube.jpeg", width=75, height=75)
+      //- p
+      //-   a(href="//www.youtube.com/", target="_blank") youtube.com/
+
+  //- $$$
+  if (xmr)
+    .container
+      hr(style="width:60%")
+      h3 $$$
+      .row
+        if (xmr)
+          p
+            a(href="monero:"+xmr+"?message=Dick%20Donation") Monero

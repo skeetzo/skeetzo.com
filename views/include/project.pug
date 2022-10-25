@@ -1,0 +1,9 @@
+//- Project Card
+if (project)
+  div(class="col-md-"+l)
+    a(href=project.url, target="_blank")
+      img(src=project.image, width=75, height=75)
+    p
+      a(href=project.url, target="_blank") #{project.name}
+      |  v#{project.version}
+    p #{project.description}

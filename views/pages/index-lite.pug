@@ -1,0 +1,19 @@
+extends ../layout/page
+
+block content
+  .main.col-lg-4
+    .row
+      if (success)
+        span #{success}
+      if (error)
+        span #{error}
+
+  //- Links
+  .container
+    //- hr
+    //- h3 Links
+    br
+    each link in links
+      .bubble
+        a(href=link.url, class="button") #{link.name}
+

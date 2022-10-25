@@ -1,0 +1,7 @@
+//- Link
+if (link)
+  .col-md-4
+    a(href=link.url, target="_blank")
+      img(src=link.image, width=75, height=75)
+    p
+      a(href=link.url, target="_blank") #{link.name}

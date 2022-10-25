@@ -1,0 +1,20 @@
+extends ../layout/page
+
+block content
+  .main.col-lg-4
+    .row
+      if (success)
+        span #{success}
+      if (error)
+        span #{error}
+
+  //- Blog
+  .container
+    //- hr
+    h3 Blog
+    //- .row
+    //-   - var i = 0
+    //-   for post in blog
+    //-     - i++
+    //-     - if (i>3) continue
+    //-     include ../include/post-card

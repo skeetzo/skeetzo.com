@@ -1,0 +1,47 @@
+/*https://coolors.co/1c2321-f6f7eb-818479-750d37-3772ff*/
+/* color0: darker button text with lighter on hover*/
+/* color1: button text*/
+/* color2: blue button*/
+/* color3: blue button lighter on hover*/
+/* color4: text*/
+body {
+  text-align: center;
+  background-color: #420039;
+  color: #F6F2FF; }
+
+hr {
+  border-color: #818479; }
+
+a {
+  color: #F6F2FF; }
+
+a:hover {
+  text-decoration: none;
+  color: blue; }
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; }
+
+.button {
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  color: black;
+  background-color: #E07BE0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  width: 150px;
+  height: 40px;
+  margin: 5px;
+  border-style: solid;
+  border-color: #F6F2FF; }
+
+.button:hover {
+  background-color: #DCCCFF;
+  color: #420039;
+  cursor: pointer; }
+
+/*# sourceMappingURL=styles.css.map */

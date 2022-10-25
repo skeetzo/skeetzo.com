@@ -1,0 +1,8 @@
+//- Post Card
+if (post)
+  .col-md-4
+    a(href=post.url, target="_blank")
+      img(src=post.image, width=75, height=75)
+    p
+      a(href=post.url, target="_blank") #{post.name}
+    p #{post.description}
