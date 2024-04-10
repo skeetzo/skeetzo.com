@@ -1,7 +1,7 @@
 let app = "skeetzo",
     host = ["ecco","echo"],
     port = 3000,
-    repo = "git@github.com:skeetzo/skeetzo.git";
+    repo = "git@github.com:skeetzo/skeetzo.com.git";
 
 module.exports = {
   
